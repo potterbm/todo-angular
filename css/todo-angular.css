@@ -1,0 +1,23 @@
+/*
+*
+* Colors
+* 
+* Black - #505263
+* Purple - #AB5BF3
+* Teal - #27DAFB
+* Dark purple - #726FD4
+* Lavender - #A0B4F7
+* Pink - #D1A3FA
+* Blue - #5EBAF9
+* 
+*/
+
+body {
+	background-color: #eeeeee;
+	color: #f8f8f8;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	font-weight: 400;
+}
