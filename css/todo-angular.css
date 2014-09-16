@@ -14,8 +14,8 @@
 
 body {
 	background-color: #eeeeee;
-	background-image: radial-gradient(ellipse farthest-corner at 0% 50%, #27DAFB 0%, #A0B4F7 33%, #D1A3FA 66%);
-	background-image: linear-gradient(to right, #27DAFB, #A0B4F7, #D1A3FA);
+	background-image: 	radial-gradient(ellipse farthest-corner at 0% 0%, #27DAFB 5%, #A0B4F7 50%, #D1A3FA 75%),
+						radial-gradient(circle at 50% 0%, #5EBAF9 5%, rgba(0, 0, 0, 0) 15%);
 	color: #f8f8f8;
 	
 	font-family: 'Raleway', sans-serif;
