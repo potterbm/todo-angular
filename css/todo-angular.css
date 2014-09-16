@@ -16,7 +16,7 @@ body {
 	background-color: #eeeeee;
 	background-image: 	radial-gradient(ellipse farthest-corner at 50% 175%, #5EBAF9 25%, rgba(0, 0, 0, 0) 50%),
 						radial-gradient(circle farthest-corner at 75% 25%, rgba(114, 111, 212, 0.5) -2%, rgba(0, 0, 0, 0) 15%),
-						radial-gradient(ellipse farthest-corner at 0% 0%, #27DAFB 5%, #A0B4F7 33%, #D1A3FA 75%);
+						radial-gradient(ellipse farthest-corner at 0% 0%, #27DAFB 3%, #A0B4F7 33%, #D1A3FA 75%);
 	color: #f8f8f8;
 	
 	font-family: 'Raleway', sans-serif;
@@ -27,4 +27,15 @@ body {
 	display: block;
 	min-height: 100%;
 	min-height: 100vh;
+}
+
+.ps {
+	background-color: #ffffff;
+	font-size: 200px;
+}
+
+.ps:before,
+.ps:after
+{
+	border-color: #5EBAF9;
 }
