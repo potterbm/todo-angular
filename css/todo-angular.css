@@ -103,6 +103,7 @@ body {
 }
 
 .item {
+	background-color: rgba(255, 255, 255, 0.4);
 	color: #A0B4F7;
 	
 	font-size: 1em;
@@ -115,6 +116,10 @@ body {
 	min-height: 1em;
 	
 	position: relative;
+}
+
+.item .item-indicator {
+	background-color: transparent;
 }
 
 .item .remove-item-button {
