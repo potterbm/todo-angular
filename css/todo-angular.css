@@ -122,6 +122,13 @@ body {
 	background-color: transparent;
 }
 
+.item .item-indicator:before,
+.item .item-indicator:after
+{
+	border-color: #726FD4;
+	background-color: #726FD4;
+}
+
 .item .remove-item-button {
 	position: absolute;
 	top: 0;
