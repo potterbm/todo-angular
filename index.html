@@ -18,7 +18,7 @@
 <body data-ng-controller="TodoList as list">
 	
 	<section class="container">
-		<input type="text" class="new-item-input" id="new-item-input" placeholder="Add item" data-ng-model="newItem" /><button class="new-item-button ps ps-3x ps-add" data-ng-click="addItem(newItem)"></button>
+		<input type="text" class="new-item-input" id="new-item-input" placeholder="Add item" data-ng-model="newItem" /><button class="new-item-button ps ps-3x ps-add" data-ng-click="list.addItem(newItem)"></button>
 	</section>
 	
 	<section class="container">
