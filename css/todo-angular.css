@@ -29,6 +29,20 @@ body {
 	min-height: 100vh;
 }
 
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder
+{
+	color: #A0B4F7;
+	opacity: 0.5;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	line-height: 1;
+	font-weight: 500;
+}
+
 .ps {
 	border: none;
 	background-color: rgba(255, 255, 255, 0.4);
@@ -46,7 +60,9 @@ body {
 .ps:after
 {
 	border-color: #A0B4F7;
-	background-color: #A0B4F7
+	background-color: #A0B4F7;
+	
+	transition: all 0.3s ease-in-out;
 }
 
 
@@ -78,24 +94,9 @@ body {
 	box-sizing: border-box;
 	display: block;
 	margin: 0;
-	margin-right: 3em;
 	padding: 1em 1em;
 	height: 3em;
 	width: 100%;
-}
-
-.new-item-input::-webkit-input-placeholder,
-.new-item-input::-moz-placeholder,
-.new-item-input:-moz-placeholder,
-.new-item-input:-ms-input-placeholder
-{
-	color: #A0B4F7;
-	opacity: 0.5;
-	
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-	line-height: 1;
-	font-weight: 500;
 }
 
 .new-item-button {
@@ -126,7 +127,7 @@ body {
 	font-weight: 500;
 	
 	display: block;
-	margin: 0;
+	margin: 1px 0;
 	padding: 1em 3em;
 	min-height: 1em;
 	
