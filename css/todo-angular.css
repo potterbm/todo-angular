@@ -80,6 +80,7 @@ body {
 	margin: 0;
 	margin-right: 3em;
 	padding: 1em 1em;
+	height: 3em;
 	width: 100%;
 }
 
@@ -104,18 +105,23 @@ body {
 
 .item {
 	background-color: rgba(255, 255, 255, 0.4);
-	color: #A0B4F7;
+	color: #726FD4;
 	
 	font-size: 1em;
 	line-height: 1;
-	font-weight: 600;
+	font-weight: 500;
 	
 	display: block;
 	margin: 0;
-	padding: 1em 2em;
+	padding: 1em 3em;
 	min-height: 1em;
 	
 	position: relative;
+}
+
+.item.completed {
+	font-weight: 300;
+	text-decoration: line-through;
 }
 
 .item .item-indicator {
@@ -129,8 +135,8 @@ body {
 .item .item-indicator:before,
 .item .item-indicator:after
 {
-	border-color: #726FD4;
-	background-color: #726FD4;
+	border-color: #A0B4F7;
+	background-color: #A0B4F7;
 }
 
 .item .remove-item-button {
