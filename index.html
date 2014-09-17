@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="todoApp">
+<html lang="en" data-ng-app="todoApp">
 
 <head>
 
@@ -23,8 +23,8 @@
 	
 	<section class="container">
 		<ul class="item-list">
-			<li class="item" ng-repeat="item in list.items">
-				<span class="item-indicator ps ps-check"></span>{{ item.text }}<button class="remove-item-button ps ps-3x ps-close"></button>
+			<li class="item" data-ng-repeat="item in list.items">
+				<span class="item-indicator ps" data-ng-class="{ 'ps-check' : item.completed, 'ps-circle-empty' : !item.completed }"></span>{{ item.text }}<button class="remove-item-button ps ps-3x ps-close"></button>
 			</li>
 		</ul>
 	</section>

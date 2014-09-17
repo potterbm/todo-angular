@@ -28,6 +28,6 @@ function TodoList() {
 
 
 
-var todoApp = angular.module('todoApp', ['ngRoute']);
+var todoApp = angular.module('todoApp', []);
 
 todoApp.controller('TodoList', TodoList);
