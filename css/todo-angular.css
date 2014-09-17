@@ -31,13 +31,15 @@ body {
 
 .ps {
 	border: none;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.4);
 	
 	cursor: pointer;
+	
+	transition: background-color 0.2s ease-in-out;
 }
 
 .ps:hover {
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .ps:before,
@@ -53,6 +55,7 @@ body {
 	display: block;
 	margin: 0 auto;
 	width: 40%;
+	position: relative;
 }
 
 .container:first-of-type {
@@ -62,14 +65,25 @@ body {
 
 
 .new-item-input {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+	color: #A0B4F7;
+	outline: none;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	line-height: 1;
+	font-weight: 500;
+	
 	box-sizing: border-box;
 	display: block;
 	margin: 0;
-	padding: .5em 1em;
+	margin-right: 3em;
+	padding: 1em 1em;
 }
 
 .new-item-button {
-	
+	outline: none;
 }
 
 
@@ -84,9 +98,11 @@ body {
 }
 
 .item {
+	color: #A0B4F7;
+	
 	font-size: 1em;
 	line-height: 1;
-	font-weight: 500;
+	font-weight: 600;
 	
 	display: block;
 	margin: 0;

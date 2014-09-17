@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/todo-angular/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="/todo-angular/css/pseudo-icons.css" />
 	<link rel="stylesheet" type="text/css" href="/todo-angular/css/todo-angular.css" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" />
 
 	
 </head>
@@ -23,8 +23,8 @@
 	
 	<section class="container">
 		<ul class="item-list">
-			<li ng-repeat="item in list.items">
-				{{ item.text }}<button class="remove-item-button ps ps-3x ps-close"></button>
+			<li class="item" ng-repeat="item in list.items">
+				<span class="item-indicator ps ps-check"></span>{{ item.text }}<button class="remove-item-button ps ps-3x ps-close"></button>
 			</li>
 		</ul>
 	</section>
