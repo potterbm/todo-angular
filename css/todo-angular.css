@@ -20,7 +20,7 @@ body {
 	color: #f8f8f8;
 	
 	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1.5;
 	font-weight: 400;
 	
@@ -45,3 +45,67 @@ body {
 	border-color: #A0B4F7;
 	background-color: #A0B4F7
 }
+
+
+
+.container {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+}
+
+.container:first-of-type {
+	margin-top: 10em;
+}
+
+
+
+.new-item-input {
+	box-sizing: border-box;
+	display: block;
+	margin: 0;
+	padding: .5em 1em;
+}
+
+.new-item-button {
+	
+}
+
+
+
+
+.item-list {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.item {
+	font-size: 1em;
+	line-height: 1;
+	font-weight: 500;
+	
+	display: block;
+	margin: 0;
+	padding: 1em 2em;
+	min-height: 1em;
+	
+	position: relative;
+}
+
+.item:before {
+	background-color: rgba(255, 255, 255, 0.5);
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	-webkit-filter: blur(1em);
+	-o-filter: blur(1em);
+	filter: blur(1em);
+}
+
