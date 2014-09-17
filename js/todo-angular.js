@@ -21,24 +21,52 @@ function TodoItem(text, completed) {
 
 
 function TodoList() {
-	this.items = [ new TodoItem("First thing", false), new TodoItem("Second thing", true), new TodoItem("Another thing") ];
+	this.items = [];
 	
 	this.addItem = function(newItem) {
 		this.items.push(new TodoItem(newItem));
 		
 		newItem = '';
+		
+		this.save();
 	}
 	
 	this.removeItem = function(index) {
 		this.items.splice(index, 1);
+		
+		this.save();
 	}
+	
+	this.initStorage = function() {
+		try {
+			this.storage = window.localStorage;
+		} catch(e) {
+			this.storage = false;
+		}
+	}
+	this.initStorage();
+	
 	
 	this.load = function() {
+		if(this.storage === false) {
+			return;
+		}
 		
+		var data = self.storage.getItem("ng-list");
+		
+		if(data && typeof(data) != "undefined") {
+			this.items = $.map(JSON.parse(data), function(item) { return new TodoItem(item); });
+		}
 	}
+	this.load();
+	
 	
 	this.save = function() {
+		if(this.storage === false) {
+			return;
+		}
 		
+		this.storage.setItem(JSON.stringify(this.items));
 	}
 }
 
