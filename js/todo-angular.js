@@ -66,7 +66,7 @@ function TodoList() {
 			return;
 		}
 		
-		this.storage.setItem(JSON.stringify(this.items));
+		this.storage.setItem("ng-list", JSON.stringify(this.items));
 	}
 }
 
