@@ -17,14 +17,16 @@ function TodoList() {
 	];
 	
 	this.addItem = function(newItem) {
-		console.log(newItem);
-		
 		this.items.push({
-			text : newItem.text,
+			text : newItem,
 			completed : false
 		});
 		
 		newItem.text = '';
+	}
+	
+	this.removeItem = function(index) {
+		this.items.splice(index, 1);
 	}
 }
 
