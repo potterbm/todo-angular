@@ -52,7 +52,7 @@ function TodoList() {
 			return;
 		}
 		
-		var data = self.storage.getItem("ng-list");
+		var data = this.storage.getItem("ng-list");
 		
 		if(data && typeof(data) != "undefined") {
 			this.items = $.map(JSON.parse(data), function(item) { return new TodoItem(item); });
