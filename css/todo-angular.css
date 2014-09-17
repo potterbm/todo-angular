@@ -99,6 +99,8 @@ body {
 .item:before {
 	background-color: rgba(255, 255, 255, 0.5);
 	
+	content: "";
+	
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -110,3 +112,8 @@ body {
 	filter: blur(1em);
 }
 
+.item .remove-item-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
