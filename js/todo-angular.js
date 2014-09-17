@@ -1,32 +1,44 @@
 
 
+function TodoItem(text, completed) {
+	
+	if(typeof(text) == "object") {
+		var object = $.extend({ text : "", completed : false }, text);
+		
+		this.text = object.text;
+		this.completed = !!object.completed;
+	}
+	
+	else {
+		this.text = text;
+		this.completed = !!completed;
+	}
+	
+	this.toggleCompleted = function() {
+		this.completed = !this.completed;
+	}
+}
+
+
 function TodoList() {
-	this.items = [
-		{
-			text : "First thing",
-			completed : false
-		},
-		{
-			text : "Second thing",
-			completed : true
-		},
-		{
-			text : "Another thing",
-			completed : false
-		}
-	];
+	this.items = [ new TodoItem("First thing", false), new TodoItem("Second thing", true), new TodoItem("Another thing") ];
 	
 	this.addItem = function(newItem) {
-		this.items.push({
-			text : newItem,
-			completed : false
-		});
+		this.items.push(new TodoItem(newItem));
 		
-		newItem.text = '';
+		newItem = '';
 	}
 	
 	this.removeItem = function(index) {
 		this.items.splice(index, 1);
+	}
+	
+	this.load = function() {
+		
+	}
+	
+	this.save = function() {
+		
 	}
 }
 
