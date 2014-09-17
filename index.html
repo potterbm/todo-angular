@@ -15,12 +15,16 @@
 	
 </head>
 
-<body ng-controller="TodoListController">
+<body data-ng-controller="TodoListController">
+	
+	<section class="container">
+		<input type="text" class="new-item-input" id="new-item-input" placeholder="Add item" data-ng-model="newItem.text" /><button class="new-item-button ps ps-add" data-ng-click="addItem()"></button>
+	</section>
 	
 	<section>
 		<ul class="item-list">
 			<li ng-repeat="item in items">
-				{{ item.text }}<button class="remove-item-button"></button>
+				{{ item.text }}<button class="remove-item-button ps ps-close" data-ng-click="removeItem()"></button>
 			</li>
 		</ul>
 	</section>
