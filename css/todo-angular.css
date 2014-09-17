@@ -84,6 +84,20 @@ body {
 	width: 100%;
 }
 
+.new-item-input::-webkit-input-placeholder,
+.new-item-input::-moz-placeholder,
+.new-item-input:-moz-placeholder,
+.new-item-input:-ms-input-placeholder
+{
+	color: #A0B4F7;
+	opacity: 0.5;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	line-height: 1;
+	font-weight: 500;
+}
+
 .new-item-button {
 	outline: none;
 	
@@ -135,8 +149,8 @@ body {
 .item .item-indicator:before,
 .item .item-indicator:after
 {
-	border-color: #A0B4F7;
-	background-color: #A0B4F7;
+	border-color: #726FD4;
+	background-color: #726FD4;
 }
 
 .item .remove-item-button {
