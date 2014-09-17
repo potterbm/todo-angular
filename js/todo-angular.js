@@ -16,13 +16,15 @@ function TodoList() {
 		}
 	];
 	
-	this.addItem = function() {
-		$scope.items.push({
-			text : $scope.newItem.text,
+	this.addItem = function(newItem) {
+		console.log(newItem);
+		
+		this.items.push({
+			text : newItem.text,
 			completed : false
 		});
 		
-		$scope.newItem.text = '';
+		newItem.text = '';
 	}
 }
 
