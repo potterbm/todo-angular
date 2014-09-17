@@ -29,17 +29,27 @@ body {
 	min-height: 100vh;
 }
 
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-moz-placeholder,
-:-ms-input-placeholder
-{
-	color: #A0B4F7;
-	opacity: 0.5;
+::-webkit-input-placeholder {
+	color: rgba(114, 111, 212, 0.5);
 	
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-	line-height: 1;
+	font-weight: 500;
+}
+
+::-moz-placeholder {
+	color: rgba(114, 111, 212, 0.5);
+	
+	font-weight: 500;
+}
+
+:-moz-placeholder {
+	color: rgba(114, 111, 212, 0.5);
+	
+	font-weight: 500;
+}
+
+:-ms-input-placeholder {
+	color: rgba(114, 111, 212, 0.5);
+	
 	font-weight: 500;
 }
 
