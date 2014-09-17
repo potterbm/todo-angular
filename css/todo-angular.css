@@ -120,6 +120,10 @@ body {
 
 .item .item-indicator {
 	background-color: transparent;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .item .item-indicator:before,
