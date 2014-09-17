@@ -1,7 +1,7 @@
 
 
-function TodoListController($scope) {
-	$scope.items = [
+function TodoList() {
+	this.items = [
 		{
 			text : "First thing",
 			completed : false
@@ -16,7 +16,7 @@ function TodoListController($scope) {
 		}
 	];
 	
-	$scope.addItem = function() {
+	this.addItem = function() {
 		$scope.items.push({
 			text : $scope.newItem.text,
 			completed : false
@@ -30,4 +30,4 @@ function TodoListController($scope) {
 
 var todoApp = angular.module('todoApp', ['ngRoute']);
 
-todoApp.controller('TodoListController', TodoListController);
+todoApp.controller('TodoList', TodoList);
