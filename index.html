@@ -24,7 +24,7 @@
 	<section class="container">
 		<ul class="item-list">
 			<li class="item" data-ng-repeat="item in list.items" data-ng-class="{ 'completed' : item.completed }" data-ng-click="item.toggleCompleted(); list.save()">
-				<span class="item-indicator ps ps-3x" data-ng-class="{ 'ps-check' : item.completed, 'ps-circle-empty' : !item.completed }"></span>{{ item.text }}<button class="remove-item-button ps ps-3x ps-close" data-ng-click="list.removeItem($index)"></button>
+				<span class="item-indicator ps ps-3x" data-ng-class="{ 'ps-check' : item.completed, 'ps-bullet-empty' : !item.completed }"></span>{{ item.text }}<button class="remove-item-button ps ps-3x ps-close" data-ng-click="list.removeItem($index)"></button>
 			</li>
 		</ul>
 	</section>
